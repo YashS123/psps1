@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" type="text/css">
+    <link rel="icon"
+        href="https://media.istockphoto.com/vectors/green-eco-power-plug-vector-id951820442?k=20&m=951820442&s=612x612&w=0&h=ENQs0392xHOaxoI-zEEEYeSN_Bx_DTyiNSgG1jUEgPY="
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/df7ee7edbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="grid">
+                <div class="hf"><a href="http://127.0.0.1:5000/data" style="text-decoration: none;"><i
+                            class="fa-solid fa-database"></i>
+                        Theory</a></div>
+                <div class="hf"><a href="http://127.0.0.1:5000/index" style="text-decoration: none;"><i class="fa-solid fa-calculator"></i>Time Of Operation</a></div>
+                <div class="hf"><a href="http://127.0.0.1:5000/res" style="text-decoration: none;"><i
+                            class="fa-solid fa-book"></i> Relay Tripping</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="grid1">
+        <div class="box">
+                <br>
+                <h1>Solution</h1>
+                <br>
+                <br>
+                <h1 class="smallhead">Secondary current of CT1 is: {{ic1}} A</h1>
+                <h1 class="smallhead">Secondary current of CT2 is: {{ic2}} A</h1>
+                <h1 class="smallhead">Differential Current is: {{id}} A</h1>
+                <h1 class="smallhead">Restraining Current is: {{ir}} A</h1>
+                <br>
+                <br>
+                <h1 class="smallhead">Differential Operating Current required for operation of relay: {{b}} A</h1>
+                <br>
+                <br>
+                <h1 class="smallhead1">Result:{{k}} </h1>
+            </div>
+        <div class="box">
+            <h1>Operating Characteristics of Percentage Differential Relay at slope<span class="smallhead1">:{{slope}}%</span>
+            <img class="profile-picture" src="{{url_for('static',filename='img.png')}}">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" type="text/css">
+    <link rel="icon"
+        href="https://media.istockphoto.com/vectors/green-eco-power-plug-vector-id951820442?k=20&m=951820442&s=612x612&w=0&h=ENQs0392xHOaxoI-zEEEYeSN_Bx_DTyiNSgG1jUEgPY="
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/df7ee7edbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="nav">
+        <div class="grid">
+            <div class="hf"><a href="http://127.0.0.1:5000/data" style="text-decoration: none;"><i
+                        class="fa-solid fa-database"></i>
+                    Theory</a></div>
+            <div class="hf"><a href="http://127.0.0.1:5000/index" style="text-decoration: none;"><i class="fa-solid fa-calculator"></i>Time Of Operation</a></div>
+            <div class="hf"><a href="http://127.0.0.1:5000/res" style="text-decoration: none;"><i
+                        class="fa-solid fa-book"></i> Relay Tripping</a></div>
+        </div>
+    </div>
+</div>
+    <div class="box1">
+        <br>
+        <h1>Solution</h1>
+        <br>
+        <br>
+        <h1 class="smallhead">Pickup current in the relay is: {{pick}} A</h1>
+        <h1 class="smallhead">Fault current in the relay is: {{result}} A</h1>
+        <h1 class="smallhead">Plug Setting Multipiler is: {{psm}} </h1>
+        <h1 class="smallhead">Time calculated using formula is: {{time}} s</h1>
+        <h1 class="smallhead">Actual Relay Operating time is: {{actual}} s</h1>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
+
+

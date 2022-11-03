@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: linear-gradient(to left, navy, black);
+    height:100vh;
+}
+
+video {
+    padding-top:8%;
+    min-width: 95vw;
+    margin-left:2%;
+    height: 50vw;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin-top: -2100px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+}
+.neonText {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 7px rgb(250, 0, 171), 0 0 10px rgb(250, 0, 171),0 0 rgb(250, 0, 171), 0 0 42px rgb(250, 0, 171),0 0 82px rgb(250, 0, 171), 0 0 92px rgb(250, 0, 171);
+    margin-left: 10%;
+    margin-top:97%
+}
+.neonText1 {
+    color: #fff;
+    text-shadow: 0 0 7px rgb(250, 0, 171), 0 0 10px rgb(250, 0, 171), 0 0 rgb(250, 0, 171), 0 0 42px rgb(250, 0, 171), 0 0 82px rgb(250, 0, 171), 0 0 92px rgb(250, 0, 171);
+    margin-left: 4.2%;
+    height:2500px;
+    background: linear-gradient(to left, navy, black);
+}
+.enter{
+    height: 30px;
+    width:240px;
+    cursor: pointer;
+    background-color: rgb(17, 242, 17);
+    margin-left: 650px;
+    border-radius: 25px;
+    padding-top:10px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+}
+.line{
+    height:5.8px;
+    margin-top: -4px;
+    padding-top: 5px;
+
+   
+}

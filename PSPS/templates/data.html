@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/data.css')}}" type="text/css">
+    <link rel="icon"
+        href="https://media.istockphoto.com/vectors/green-eco-power-plug-vector-id951820442?k=20&m=951820442&s=612x612&w=0&h=ENQs0392xHOaxoI-zEEEYeSN_Bx_DTyiNSgG1jUEgPY="
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/df7ee7edbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="nav">
+        <div class="grid">
+            <div class="hf"><a href="http://127.0.0.1:5000/data" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-book"></i>
+                    Theory</a></div>
+            <div class="hf"><a href="http://127.0.0.1:5000/index" style="text-decoration: none;"><i class="fa-solid fa-calculator"></i>
+                 Time Of Operation</a></div>
+            <div class="hf"><a href="http://127.0.0.1:5000/res" style="text-decoration: none;"><i class="fa-sharp fa-solid fa-bell"></i>Relay Tripping</a></div>
+        </div>
+    </div>
+</div>
+    <div class="box2">
+        <h1 class="tit1">Overview of The Differential Relays</h1>
+        <br>
+        <br>
+        <h1 class="smallhead2">The relays used in power system protection are of different types. Among them differential relay is very commonly used relay for protecting transformers and generators from localised faults.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <br>
+        <img class="sarvesh" src="https://www.electrical4u.net/wp-content/uploads/2018/06/Percentage-Differential-Relay-4.png">
+        <br>
+        <br>
+        <h1 class="smallhead2">The differential relay is one that operates when there is a difference between two or more similar electrical quantities
+        exceeds a predetermined value. In the differential relay scheme circuit, there are two currents come from two parts of
+        an electrical power circuit. These two currents meet at a junction point where a relay coil is connected. According to
+        Kirchhoff Current Law, the resultant current flowing through the relay coil is nothing but the summation of two
+        currents, coming from two different parts of the electrical power circuit. If the polarity and amplitude of both the
+        currents are so adjusted that the phasor sum of these two currents, is zero at normal operating condition.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thereby there
+        will be no current flowing through the relay coil at normal operating conditions. But due to any abnormality in the
+        power circuit, if this balance is broken, that means the phasor sum of these two currents no longer remains zero and
+        there will be non-zero current flowing through the relay coil thereby relay being operated.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <br>
+        <h1 class="tit2">Working of Percentage Differential Relays</h1>
+        <br>
+        <h1 class="smallhead2">In this type of relay, there are restraining coils in addition to the operating coil of the relay. The restraining coils
+        produce torque opposite to the operating torque. Under normal and through fault conditions, restraining torque is 
+        greater than operating torque. Thereby relay remains inactive. When internal fault occurs, the operating force exceeds
+        the bias force and hence the relay is operated. This bias force can be adjusted by varying the number of turns on the
+        restraining coils. As shown in the figure below, if I1 is the secondary current of CT1 and I2 is the secondary current
+        of CT2 then current through the operating coil is I1-I2 and current through the restraining coil is (I1 + I2)/2. In
+        normal and through fault condition, torque produced by restraining coils due to current (I1+ I2)/2 is greater than
+        torque produced by operating coil due to current I1-I2 but in internal faulty condition these become opposite. And the
+        bias setting is defined as the ratio of (I1-I2) to (I1+ I2)/2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <br>
+        <img class="imag" src="https://www.electrical4u.com/electrical/power-system-equations/protection-equation/differntial-relay-1.gif">
+        <br>
+        <br>
+        <h1 class="smallhead2">It is clear from the above explanation, greater the current flowing through the restraining coils, higher the value of
+        the current required for operating coil to be operated. The relay is called percentage relay because the operating &nbsp;&nbsp;
+        current required to trip can be expressed as a percentage of through current.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <br>
+        <h1 class="tit3">Operating Characteristics of Biased Differential Relay</h1>
+        <br>
+        <img class="sarves" src="https://circuitglobe.com/wp-content/uploads/2017/01/operating-charateristic-of-percentage-Differential-Relay.jpg">
+        <br>
+        <br>
+        <h1 class="smallhead2">The operating characteristic of the relay is shown in the figure below. The above graph shows that the ratio of their
+        operating current and restraining current is fixed percentage. This relay is also called the biased differential relay &nbsp;
+        because the restraining coil is also called a bias coil as it provides additional flux.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    </div>
+    </div>
+</body>
+
+</html>

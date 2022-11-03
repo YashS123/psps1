@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height:753px;
+    width:800px;
+    background: linear-gradient(to bottom right,navy,black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    height: 50px;
+    width:192%;
+    background:linear-gradient(to right, #25c193, #25bab5);
+}
+.grid1{
+    display: grid;
+    grid-template-columns:750px 10px ;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 90px 160px 250px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.hf{
+    flex: 1 1 auto;
+}
+.box {
+    margin-top:65px;
+    margin-left: 45px;
+    width: 620px;
+    height: 580px;
+    background: linear-gradient(to right,#25c193,#25bab5);
+    text-align: left;
+}
+
+.box1 {
+    margin-top: 120px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 450px;
+    width: 620px;
+    height: 500px;
+    background: linear-gradient(to right, #25c193, #25bab5);
+}
+.box2{
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-left:20px;
+    width: 195vh;
+    height: 640px;
+    background: linear-gradient(to right,#25c193,#25bab5);
+}
+
+h1 {
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.form-control {
+    height: 40px;
+    width: 190px;
+    border: rebeccapurple solid 5px;
+    border-radius: 15px;
+    padding-left: 2px;
+    margin-left:218px;
+    margin-top:20px;
+}
+
+.btn {
+    margin-top: 5%;
+    margin-left: 25%;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgb(17, 242, 17);
+    color: rgb(0, 68, 255);
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px rgb(0, 68, 255) solid;
+}
+
+.smallhead {
+    font-size: 25px;
+}
+.smallhead1 {
+    font-size: 25px;
+    color: darkblue;
+
+}
+.smallhead2{
+    font-size: 25px;
+    color:black;
+}
+a:hover{
+    color:red;
+}
+
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profile-picture
+{
+    height:350px;
+    margin-left: 4%;
+    margin-top:5%;
+}
+.tit1{
+    color:#022d36;
+    font-weight: bold;
+    text-decoration:underline;
+}
+.sarvesh{
+    margin-left: 25%;
+}

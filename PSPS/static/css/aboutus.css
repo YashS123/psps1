@@ -1,0 +1,136 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 753px;
+    width: 800px;
+    background: linear-gradient(to bottom right, #f8345f, #963288, #6c34a2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    height: 50px;
+    width: 192%;
+    background-color: wheat;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 90px 180px 270px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.hf {
+    flex: 2 2 auto;
+}
+
+.box {
+    margin-top: 180px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 450px;
+    width: 620px;
+    height: 280px;
+    background: linear-gradient(to right, #25c193, #25bab5);
+}
+
+h1 {
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.form-control {
+    height: 40px;
+    width: 190px;
+    border: rebeccapurple solid 5px;
+    border-radius: 15px;
+    padding-left: 2px;
+}
+
+.btn {
+    margin-top: 5%;
+    margin-left: 25%;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgb(17, 242, 17);
+    color: rgb(0, 68, 255);
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px rgb(0, 68, 255) solid;
+}
+
+.smallhead {
+    font-size: 25px;
+}
+
+a:hover {
+    color: pink;
+}
+
+p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.grid1 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 100px;
+    margin-left: 40px;
+}
+
+.profile {
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    vertical-align: top;
+    margin-right: 15px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #25c193, #25bab5);
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 55%;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 140px;
+    margin-bottom: 5px;
+}
+
+
+.name1 {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.name2 {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-bottom: 5px;
+}
+.mainh{
+    margin-top:5px;
+    font-size: 50px;
+    text-align: right;
+    padding-left:5px ;
+}
